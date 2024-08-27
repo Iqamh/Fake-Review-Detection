@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulasan Checker</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body class="height2">
+    <div class="container">
+      <header>
+        <h1>Ulasan Checker</h1>
+      </header>
+      <div class="main-content">
+        <aside class="sidebar">
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/comparison">Comparison</a></li>
+              <li><a href="/model_comparison">Model Comparison</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="content">
+          <form action="/" method="post">
+            <textarea name="review" placeholder="Tulis Ulasan Produk" required>{{ review if review else '' }}</textarea>
+            <button type="submit">Check</button>
+          </form>
+          {% if prediction is not none %}
+          <div class="result">
+            <h2>Hasil Prediksi Ulasan Produk</h2>
+            <p><strong>Prediksi:</strong> {{ prediction }}</p>
+          </div>
+          {% endif %}
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

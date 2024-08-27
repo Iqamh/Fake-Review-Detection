@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perbandingan Model</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Perbandingan Model</h1>
+      </header>
+      <div class="main-content">
+        <aside class="sidebar">
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/comparison">Comparison</a></li>
+              <li><a href="/model_comparison">Model Comparison</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="content">
+          <h2>Perbandingan model dengan proporsi data berbeda</h2>
+
+          <h3>Proporsi 60:30:10</h3>
+          <div class="image-group">
+            <img
+              src="{{ url_for('static', filename='accuracy_plot_0.3_hs(25, 25, 100)_bs16_a0.1_lr0.001_ver4_real.png') }}"
+              alt="Proporsi 70:30 Image 1" />
+            <img
+              src="{{ url_for('static', filename='loss_plot_0.3_hs(25, 25, 100)_bs16_a0.1_lr0.001_ver4_real.png') }}"
+              alt="Proporsi 70:30 Image 2" />
+          </div>
+
+          <h3>Proporsi 70:20:10</h3>
+          <div class="image-group">
+            <img
+              src="{{ url_for('static', filename='accuracy_plot_0.2_hs(25, 25, 100)_bs16_a0.1_lr0.001_ver4_real.png') }}"
+              alt="Proporsi 80:20 Image 1" />
+            <img
+              src="{{ url_for('static', filename='loss_plot_0.2_hs(25, 25, 100)_bs16_a0.1_lr0.001_ver4_real.png') }}"
+              alt="Proporsi 80:20 Image 2" />
+          </div>
+
+          <h3>Proporsi 80:10:10</h3>
+          <div class="image-group">
+            <img
+              src="{{ url_for('static', filename='accuracy_plot_0.1_hs(25, 25, 100)_bs16_a0.1_lr0.001_ver4_real.png') }}"
+              alt="Proporsi 90:10 Image 1" />
+            <img
+              src="{{ url_for('static', filename='loss_plot_0.3_hs(25, 25, 100)_bs16_a0.1_lr0.001_ver4_real.png') }}"
+              alt="Proporsi 90:10 Image 2" />
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

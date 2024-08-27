@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan Ulasan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="height1">
+    <div class="container">
+        <header>
+            <h1>Perbandingan Ulasan</h1>
+        </header>
+        <div class="main-content">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/comparison">Comparison</a></li>
+                        <li><a href="/model_comparison">Model Comparison</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="content">
+                <h2>Jumlah Perubahan Pelabelan: {{ changes_count }}</h2>
+                <div class="table-responsive">
+                    {{ tables|safe }}
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
