@@ -4,6 +4,6 @@ This project aims to detect fake reviews using a Multi-Layer Perceptron (MLP) mo
 
 ## Features
 
-1. MLP Model:</strong> Implements a Multi-Layer Perceptron model for binary classification of reviews (fake or real).
-2. User-Labeled Dataset:</strong> Utilizes a dataset labeled manually by users to train and test the model.
-3. Website Mockup:</strong> A simple web interface to display detection results.
+1. <strong>MLP Model:</strong> Implements a Multi-Layer Perceptron model for binary classification of reviews (fake or real).
+2. <strong>User-Labeled Dataset:</strong> Utilizes a dataset labeled manually by users to train and test the model.
+3. <strong>Website Mockup:</strong> A simple web interface to display detection results.
